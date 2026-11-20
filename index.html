@@ -1,12 +1,207 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#09090d"><title>Vênus.AI</title><style>
-:root{color-scheme:dark;--bg:#09090d;--panel:#111118;--panel2:#17151f;--line:#282531;--text:#f5f3fa;--muted:#9a96a7;--purple:#a78bfa;--pink:#f0a5c7}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 Inter,system-ui,-apple-system,Segoe UI,sans-serif}.app-shell{display:flex;min-height:100vh}.sidebar{width:235px;border-right:1px solid var(--line);padding:24px 16px;display:flex;flex-direction:column;flex-shrink:0;background:#0c0b11}.brand{display:flex;align-items:center;gap:10px;font-size:21px;font-weight:750;margin:4px 8px 30px}.brand-mark{display:grid;place-items:center;width:34px;height:34px;border-radius:11px;background:linear-gradient(145deg,#a78bfa,#e5a1c4);color:#17111e;font-weight:900}.muted{color:var(--muted)}.nav{width:100%;border:0;background:transparent;color:#bdb8c8;padding:12px 14px;text-align:left;border-radius:11px;display:flex;gap:12px;align-items:center;cursor:pointer;font-size:15px;margin:3px 0}.nav:hover,.nav.active{background:#211c2c;color:#fff}.nav.active{box-shadow:inset 2px 0 var(--purple)}.side-bottom{margin-top:auto}.profile{display:flex;gap:10px;align-items:center;border-top:1px solid var(--line);padding:18px 5px 0;margin-top:18px}.profile small{display:block;color:var(--muted)}.avatar{background:linear-gradient(135deg,#a78bfa,#d889b8);color:#24152d;border-radius:50%;display:grid;place-items:center;font-weight:800}.avatar.small{width:34px;height:34px}.main{flex:1;min-width:0}.topbar{height:76px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 30px;position:sticky;top:0;background:#09090de8;backdrop-filter:blur(12px);z-index:2}.top-title{font-weight:650}.create-btn,.primary{border:0;background:linear-gradient(110deg,#a78bfa,#d991bd);color:#1a1221;font-weight:700;border-radius:10px;padding:10px 15px;cursor:pointer}.mobile-menu{display:none;background:transparent;border:0;color:inherit;font-size:20px}#content{max-width:1250px;margin:auto;padding:30px}.hero{border:1px solid #2a2436;background:radial-gradient(ellipse at top right,#30213c 0,#16121e 45%,#111018 100%);border-radius:20px;padding:36px 34px;margin-bottom:28px}.hero h1{font-size:clamp(27px,4vw,42px);line-height:1.15;margin:0 0 12px;letter-spacing:-.04em}.hero p{color:#b7afc5;max-width:570px;margin:0 0 22px}.search{width:100%;background:#15131b;border:1px solid var(--line);padding:13px 15px;border-radius:12px;color:inherit;margin:0 0 22px}.section-head{display:flex;align-items:center;justify-content:space-between;margin:25px 0 14px}.section-head h2{font-size:20px;margin:0}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.chip{border:1px solid var(--line);background:#121119;color:#bdb6c8;border-radius:999px;padding:7px 13px;cursor:pointer}.chip.active{background:#2b2039;color:#e5d8ff;border-color:#604a7b}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:16px}.card{border:1px solid var(--line);background:var(--panel);border-radius:16px;overflow:hidden;cursor:pointer;transition:.18s transform,.18s border-color}.card:hover{transform:translateY(-3px);border-color:#625075}.cover{height:185px;display:grid;place-items:center;background:linear-gradient(135deg,#2d1f3d,#13121a);font-size:64px;position:relative}.cover .badge{position:absolute;left:12px;top:12px;font-size:11px;background:#0c0b11bd;padding:5px 8px;border-radius:30px;color:#d8c7fa}.card-body{padding:13px 14px}.card-body h3{margin:0 0 4px;font-size:16px}.card-body p{color:var(--muted);font-size:13px;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:11px}.tag{font-size:11px;color:#c8b4e9;background:#211a2c;padding:4px 7px;border-radius:6px}.empty{padding:45px 20px;text-align:center;color:var(--muted);border:1px dashed #393340;border-radius:16px}.form-wrap{max-width:850px;margin:auto}.form-wrap h1{font-size:30px;margin:0 0 6px}.form-wrap .intro{color:var(--muted);margin:0 0 24px}.panel{border:1px solid var(--line);background:var(--panel);padding:20px;border-radius:16px;margin:15px 0}.label{display:block;font-weight:650;margin:14px 0 7px}.field,textarea,select{width:100%;border:1px solid #34303d;background:#0d0c12;color:var(--text);border-radius:10px;padding:12px;font:inherit;outline:none}.field:focus,textarea:focus{border-color:#8f72be}textarea{resize:vertical;min-height:110px}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.mode-tabs{display:flex;gap:8px;margin:15px 0}.mode-tabs button{flex:1;border:1px solid var(--line);background:#131119;color:var(--muted);padding:12px;border-radius:10px;cursor:pointer}.mode-tabs button.active{border-color:#8261a9;background:#261d32;color:#e5d5ff}.form-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:18px}.secondary{background:#25212d;color:#ddd;border:1px solid var(--line);border-radius:10px;padding:10px 14px;cursor:pointer}.chat-view{max-width:900px;margin:0 auto;height:calc(100vh - 135px);display:flex;flex-direction:column}.chat-head{display:flex;gap:14px;align-items:center;padding:16px;border-bottom:1px solid var(--line)}.chat-head .cover{height:55px;width:55px;border-radius:13px;font-size:28px}.messages{flex:1;overflow:auto;padding:20px;display:flex;flex-direction:column;gap:12px}.bubble{max-width:75%;padding:12px 15px;border-radius:15px;background:#191620;border:1px solid #2c2934;white-space:pre-wrap}.bubble.user{align-self:flex-end;background:#332541;border-color:#514063}.chat-compose{display:flex;gap:9px;padding:12px;border-top:1px solid var(--line)}.chat-compose input{flex:1}.small-note{color:var(--muted);font-size:12px;margin-top:8px}.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:#282331;border:1px solid #4b3c58;padding:11px 17px;border-radius:12px;z-index:5}.heart{float:right;background:none;border:0;color:#e6a2c6;cursor:pointer;font-size:20px}.danger{color:#f4a6ad}@media(max-width:760px){.sidebar{display:none;position:fixed;inset:0 auto 0 0;z-index:5;width:245px}.sidebar.open{display:flex}.topbar{padding:0 16px;height:65px}.mobile-menu{display:block}.top-title{font-size:14px}#content{padding:17px}.hero{padding:24px 20px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.cover{height:150px}.card-body{padding:11px}.card-body h3{font-size:14px}.two{grid-template-columns:1fr}.chat-view{height:calc(100vh - 100px)}}
 
-</style></head><body><div class="app-shell"><aside class="sidebar"><div class="brand"><span class="brand-mark">V</span><span>Vênus<span class="muted">.AI</span></span></div><button class="nav active" data-view="discover">⌕ <span>Explorar</span></button><button class="nav" data-view="my">▣ <span>Meus personagens</span></button><button class="nav" data-view="favorites">♡ <span>Favoritos</span></button><div class="side-bottom"><button class="nav" data-view="create">＋ <span>Criar personagem</span></button><div class="profile"><div class="avatar small">VL</div><div><strong>Seu espaço</strong><small>Biblioteca local</small></div></div></div></aside><main class="main"><header class="topbar"><button class="mobile-menu" id="mobileMenu">☰</button><div class="top-title">Seu universo de personagens</div><button class="create-btn" data-view="create">＋ Criar</button></header><section id="content"></section></main></div><div id="modal-root"></div><script>
-const KEY='venus.ai.characters.v1';let characters=JSON.parse(localStorage.getItem(KEY)||'[]');let favorites=JSON.parse(localStorage.getItem(KEY+'.favorites')||'[]');let currentFilter='Todos';let activeChat=null;let view='discover';const content=document.getElementById('content');const modalRoot=document.getElementById('modal-root');const categories=['Todos','Romance','Fantasia','Aventura','Drama','Amizade','Sci-fi'];const sample=[];function save(){localStorage.setItem(KEY,JSON.stringify(characters));localStorage.setItem(KEY+'.favorites',JSON.stringify(favorites))}function escapeHtml(s=''){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}function avatar(c){return c.emoji||'✦'}function render(){if(view==='create'){renderForm();return}if(view==='chat'){renderChat();return}let list=view==='my'?characters:view==='favorites'?characters.filter(c=>favorites.includes(c.id)):characters;let title=view==='my'?'Meus personagens':view==='favorites'?'Favoritos':'Personagens em destaque';let cards=list.filter(c=>(currentFilter==='Todos'||(c.category||'').toLowerCase().includes(currentFilter.toLowerCase()))).map(c=>card(c)).join('');content.innerHTML=`${view==='discover'?`<section class="hero"><h1>Histórias que começam<br>com você.</h1><p>Explore personagens, crie conexões e mergulhe em conversas onde sua imaginação é o limite.</p><button class="primary" data-view="create">＋ Criar seu personagem</button></section>`:''}<input class="search" id="search" placeholder="⌕  Buscar personagens..."/><div class="section-head"><h2>${title}</h2><span class="muted">${list.length} personagem(ns)</span></div><div class="filters">${categories.map(x=>`<button class="chip ${currentFilter===x?'active':''}" data-filter="${x}">${x}</button>`).join('')}</div><div class="grid" id="cards">${cards||`<div class="empty" style="grid-column:1/-1">${view==='favorites'?'Você ainda não favoritou personagens.':'Sua biblioteca está vazia por enquanto.'}<br><button class="primary" data-view="create" style="margin-top:14px">Criar personagem</button></div>`}</div>`;document.getElementById('search').oninput=e=>{let q=e.target.value.toLowerCase();document.getElementById('cards').innerHTML=list.filter(c=>(currentFilter==='Todos'||(c.category||'').toLowerCase().includes(currentFilter.toLowerCase()))&&(c.name+' '+c.description+' '+(c.tags||[]).join(' ')).toLowerCase().includes(q)).map(card).join('')||'<div class="empty" style="grid-column:1/-1">Nenhum personagem encontrado.</div>'};bindCardActions()}
-function card(c){return `<article class="card" data-open="${c.id}"><div class="cover">${avatar(c)}<span class="badge">${escapeHtml(c.category||'Personagem')}</span></div><div class="card-body"><button class="heart" data-fav="${c.id}" aria-label="Favoritar">${favorites.includes(c.id)?'♥':'♡'}</button><h3>${escapeHtml(c.name)}</h3><p>${escapeHtml(c.description||c.personality||'Um personagem esperando por uma história.')}</p><div class="tags">${(c.tags||[]).slice(0,3).map(t=>`<span class="tag">${escapeHtml(t)}</span>`).join('')}</div></div></article>`}
-function bindCardActions(){document.querySelectorAll('[data-open]').forEach(el=>el.onclick=e=>{if(e.target.closest('[data-fav]'))return;let c=characters.find(x=>x.id===el.dataset.open);if(c){activeChat=c;view='chat';render()}});document.querySelectorAll('[data-fav]').forEach(b=>b.onclick=e=>{e.stopPropagation();let id=b.dataset.fav;favorites=favorites.includes(id)?favorites.filter(x=>x!==id):[...favorites,id];save();render()});document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{currentFilter=b.dataset.filter;render()})}
-function renderForm(editId=null){let old=characters.find(c=>c.id===editId);content.innerHTML=`<div class="form-wrap"><h1>${old?'Editar personagem':'Criar personagem'}</h1><p class="intro">Dê vida a alguém que você gostaria de conhecer.</p><div class="mode-tabs"><button class="active" id="quick">Criação rápida</button><button id="full">Criação completa</button></div><form id="characterForm"><div class="panel"><div class="two"><div><label class="label">Nome *</label><input class="field" name="name" required maxlength="80" value="${escapeHtml(old?.name||'')}" placeholder="Nome do personagem"></div><div><label class="label">Categoria</label><select class="field" name="category">${['Romance','Fantasia','Aventura','Drama','Amizade','Sci-fi','Outro'].map(x=>`<option ${old?.category===x?'selected':''}>${x}</option>`).join('')}</select></div></div><div class="two"><div><label class="label">Emoji / avatar temporário</label><input class="field" name="emoji" maxlength="8" value="${escapeHtml(old?.emoji||'✨')}" placeholder="✨"></div><div><label class="label">Tags (separadas por vírgula)</label><input class="field" name="tags" value="${escapeHtml((old?.tags||[]).join(', '))}" placeholder="gentil, misterioso, intenso"></div></div><label class="label">Descrição e personalidade (campo principal) *</label><textarea name="description" required rows="6" placeholder="Descreva completamente o personagem: personalidade, aparência, história, jeito de falar, desejos, limites, cenário...">${escapeHtml(old?.description||old?.personality||'')}</textarea><label class="label">Mensagem inicial</label><textarea name="greeting" rows="3" placeholder="Como ele/ela inicia a conversa?">${escapeHtml(old?.greeting||'')}</textarea><div id="advanced" hidden><label class="label">História / contexto</label><textarea name="backstory" placeholder="Passado, relações, mundo, acontecimentos...">${escapeHtml(old?.backstory||'')}</textarea><label class="label">Instruções adicionais de comportamento</label><textarea name="instructions" placeholder="Regras de interpretação, estilo, coisas que deve lembrar...">${escapeHtml(old?.instructions||'')}</textarea><label class="label">Aparência detalhada</label><textarea name="appearance" placeholder="Detalhes físicos e estilo...">${escapeHtml(old?.appearance||'')}</textarea></div></div><div class="form-actions"><button type="button" class="secondary" data-view="${old?'my':'discover'}">Cancelar</button><button class="primary" type="submit">${old?'Salvar alterações':'Salvar personagem'}</button></div></form></div>`;let advanced=false;document.getElementById('quick').onclick=()=>{advanced=false;document.getElementById('advanced').hidden=true;document.getElementById('quick').classList.add('active');document.getElementById('full').classList.remove('active')};document.getElementById('full').onclick=()=>{advanced=true;document.getElementById('advanced').hidden=false;document.getElementById('full').classList.add('active');document.getElementById('quick').classList.remove('active')};document.getElementById('characterForm').onsubmit=e=>{e.preventDefault();let f=new FormData(e.target),obj={id:old?.id||crypto.randomUUID(),name:f.get('name').trim(),category:f.get('category'),emoji:f.get('emoji')||'✨',tags:f.get('tags').split(',').map(x=>x.trim()).filter(Boolean),description:f.get('description').trim(),greeting:f.get('greeting').trim(),backstory:f.get('backstory')||'',instructions:f.get('instructions')||'',appearance:f.get('appearance')||'',created:old?.created||Date.now()};if(old)characters=characters.map(x=>x.id===old.id?obj:x);else characters.unshift(obj);save();view=old?'my':'discover';toast('Personagem salvo!');render()};bindViews()}
-function renderChat(){let c=activeChat;if(!c){view='discover';render();return}content.innerHTML=`<div class="chat-view"><div class="chat-head"><div class="cover">${avatar(c)}</div><div><strong>${escapeHtml(c.name)}</strong><div class="muted">${escapeHtml(c.category||'Personagem')}</div></div><button class="secondary" id="editCharacter">Editar</button></div><div class="messages" id="messages"><div class="bubble">${escapeHtml(c.greeting||`Olá! Eu sou ${c.name}. Como começa nossa história?`)}</div></div><div class="chat-compose"><input class="field" id="chatInput" placeholder="Escreva sua mensagem..."/><button class="primary" id="send">Enviar</button></div><p class="small-note" style="padding:0 12px">Modo de conversa local demonstrativo. Para respostas reais de IA, conectaremos um provedor e uma chave API segura no servidor.</p></div>`;document.getElementById('editCharacter').onclick=()=>renderForm(c.id);let send=()=>{let inp=document.getElementById('chatInput'),text=inp.value.trim();if(!text)return;let box=document.getElementById('messages');box.insertAdjacentHTML('beforeend',`<div class="bubble user">${escapeHtml(text)}</div><div class="bubble">${escapeHtml(c.name)} está pronto para conversar. A conexão com IA ainda não foi configurada. Sua mensagem: “${escapeHtml(text.slice(0,180))}”</div>`);inp.value='';box.scrollTop=box.scrollHeight};document.getElementById('send').onclick=send;document.getElementById('chatInput').onkeydown=e=>{if(e.key==='Enter')send()};bindViews()}
-function toast(s){let el=document.createElement('div');el.className='toast';el.textContent=s;document.body.append(el);setTimeout(()=>el.remove(),2300)}function bindViews(){document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{view=b.dataset.view;activeChat=null;document.querySelectorAll('.nav').forEach(x=>x.classList.toggle('active',x.dataset.view===view));render();document.querySelector('.sidebar').classList.remove('open')})}document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{view=b.dataset.view;activeChat=null;render();document.querySelector('.sidebar').classList.remove('open')});document.getElementById('mobileMenu').onclick=()=>document.querySelector('.sidebar').classList.toggle('open');render();
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vênus.AI</title>
+<style>
+:root{--bg:#09080d;--panel:#121019;--panel2:#191421;--purple:#9b63ff;--pink:#e88bff;--text:#f5f0fa;--muted:#a49bad;--line:#292131}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Arial,sans-serif}
+button,input,textarea,select{font:inherit}
+button{cursor:pointer}
+.app{min-height:100vh}
+header{height:70px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 5%;position:sticky;top:0;background:#09080df2;backdrop-filter:blur(12px);z-index:5}
+.logo{display:flex;align-items:center;gap:10px;font-size:21px;font-weight:800;letter-spacing:.3px}
+.moon{color:#b28aff;font-size:28px;text-shadow:0 0 22px #8e51ff}
+nav{display:flex;gap:8px}
+nav button,.ghost{background:transparent;color:var(--muted);border:0;padding:10px 14px;border-radius:10px}
+nav button.active,nav button:hover,.ghost:hover{background:var(--panel2);color:white}
+.primary{border:0;border-radius:11px;padding:11px 17px;color:white;font-weight:700;background:linear-gradient(135deg,#8246ef,#bd68e8);box-shadow:0 5px 25px #7c3bd526}
+.primary:hover{filter:brightness(1.12)}
+main{max-width:1400px;margin:auto;padding:30px 5%}
+.hero{padding:42px 0 32px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.hero h1{font-size:clamp(30px,5vw,54px);margin:0 0 12px;letter-spacing:-1.5px}
+.hero h1 span{background:linear-gradient(90deg,#a578ff,#e6a4ff);background-clip:text;color:transparent}
+.hero p{color:var(--muted);margin:0;max-width:550px;line-height:1.6}
+.hero-moon{font-size:clamp(65px,12vw,130px);color:#a57aff;text-shadow:0 0 50px #7b35e988}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:15px 0 24px}
+.search{flex:1;min-width:210px;background:var(--panel);border:1px solid var(--line);border-radius:12px;color:white;padding:13px 15px;outline:none}
+.search:focus{border-color:#8052bb}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.chip{background:var(--panel);border:1px solid var(--line);border-radius:99px;color:var(--muted);padding:9px 14px}
+.chip.active{color:white;border-color:#8052bb;background:#241833}
+.section-head{display:flex;align-items:center;justify-content:space-between;margin:24px 0 16px}
+.section-head h2{margin:0;font-size:21px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.card{border:1px solid var(--line);background:var(--panel);border-radius:16px;overflow:hidden;transition:.2s}
+.card:hover{transform:translateY(-3px);border-color:#64468a}
+.avatar{height:190px;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse at 50% 25%,#56337b,#21192e 48%,#100e16);font-size:70px;position:relative}
+.avatar .initial{font-size:54px;font-weight:800;color:#d8baff;text-shadow:0 0 30px #ae69ff}
+.card-body{padding:14px}
+.card-body h3{margin:0 0 6px;font-size:17px}
+.card-body p{color:var(--muted);font-size:13px;line-height:1.5;margin:0;height:40px;overflow:hidden}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0}
+.tag{font-size:11px;color:#c6a7ee;background:#251b31;padding:5px 8px;border-radius:6px}
+.card-actions{display:flex;gap:8px;margin-top:12px}
+.card-actions button{flex:1}
+.small{padding:9px 10px;font-size:13px}
+.outline{background:transparent;border:1px solid var(--line);color:var(--text);border-radius:10px}
+.heart{width:40px;border:1px solid var(--line);border-radius:10px;background:transparent;color:#d8baff}
+.empty{border:1px dashed #393044;padding:45px 20px;text-align:center;color:var(--muted);border-radius:15px}
+.hidden{display:none!important}
+.modal{position:fixed;inset:0;background:#000b;backdrop-filter:blur(5px);z-index:20;display:flex;align-items:center;justify-content:center;padding:15px}
+.modal-box{width:min(720px,100%);max-height:90vh;overflow:auto;background:#110e18;border:1px solid #33283e;border-radius:18px;padding:22px}
+.modal-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.modal-top h2{margin:0}
+.close{background:transparent;border:0;color:#aaa;font-size:24px}
+label{display:block;font-size:13px;color:#c6bbd2;margin:14px 0 7px}
+input,textarea,select{width:100%;background:#0b0910;color:white;border:1px solid #30263b;border-radius:10px;padding:12px;outline:none}
+textarea{min-height:100px;resize:vertical}
+input:focus,textarea:focus,select:focus{border-color:#8455bd}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-buttons{display:flex;justify-content:flex-end;gap:10px;margin-top:18px}
+.chat-box{height:55vh;overflow:auto;background:#0c0a10;border:1px solid var(--line);border-radius:14px;padding:15px}
+.msg{padding:12px 14px;border-radius:13px;margin:10px 0;max-width:85%;line-height:1.5;white-space:pre-wrap}
+.msg.user{background:#342343;margin-left:auto}
+.msg.bot{background:#1a1520}
+.chat-input{display:flex;gap:8px;margin-top:12px}
+.chat-input input{flex:1}
+.note{font-size:12px;color:var(--muted);line-height:1.5;margin-top:10px}
+footer{border-top:1px solid var(--line);padding:28px 5%;color:var(--muted);text-align:center;font-size:12px;margin-top:40px}
+@media(max-width:950px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:650px){header{padding:0 4%;height:auto;min-height:64px;flex-wrap:wrap;gap:5px}.logo{font-size:18px}nav{order:3;width:100%;justify-content:space-around}nav button{padding:9px 10px}.hero{padding:28px 0}.hero-moon{font-size:65px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.avatar{height:145px}.card-body{padding:11px}.card-body p{height:55px}.row2{grid-template-columns:1fr}main{padding:20px 4%}}
+</style>
+</head>
+<body>
+<div class="app">
+<header>
+  <div class="logo"><span class="moon">☾</span> Vênus.AI</div>
+  <nav>
+    <button class="active" data-page="explore">Explorar</button>
+    <button data-page="mine">Meus personagens</button>
+    <button data-page="favorites">Favoritos</button>
+  </nav>
+  <button class="primary" onclick="openCreator()">＋ Criar personagem</button>
+</header>
+<main>
+  <section class="hero">
+    <div><h1>Imagine. Crie. <span>Conecte-se.</span></h1>
+    <p>Descubra personagens, crie novas histórias e explore conversas do seu jeito.</p></div>
+    <div class="hero-moon">☾</div>
+  </section>
+  <div class="toolbar">
+    <input id="search" class="search" placeholder="Buscar personagens..." oninput="render()">
+    <div class="filters" id="filters">
+      <button class="chip active" data-filter="Todos">Todos</button>
+      <button class="chip" data-filter="Anime">Anime</button>
+      <button class="chip" data-filter="Realista">Realista</button>
+      <button class="chip" data-filter="Romance">Romance</button>
+      <button class="chip" data-filter="Fantasia">Fantasia</button>
+    </div>
+  </div>
+  <div class="section-head"><h2 id="sectionTitle">Explore personagens</h2><span id="count" class="note"></span></div>
+  <div id="cards" class="grid"></div>
+</main>
+<footer>Vênus.AI · Seu universo de personagens e histórias</footer>
+</div>
 
-</script></body></html>
+<!-- Character creator -->
+<div class="modal hidden" id="creator">
+<div class="modal-box">
+<div class="modal-top"><h2 id="creatorTitle">Criar personagem</h2><button class="close" onclick="closeCreator()">×</button></div>
+<form id="characterForm">
+<input type="hidden" id="editId">
+<label>Nome do personagem</label><input id="name" required maxlength="60" placeholder="Como ele ou ela se chama?">
+<div class="row2">
+<div><label>Modo de criação</label><select id="mode"><option value="quick">Rápido</option><option value="full">Completo</option></select></div>
+<div><label>Categoria</label><select id="category"><option>Romance</option><option>Anime</option><option>Realista</option><option>Fantasia</option><option>Aventura</option><option>Amizade</option><option>Outro</option></select></div>
+</div>
+<label>Descrição e personalidade (prompt principal)</label>
+<textarea id="prompt" required placeholder="Descreva seu personagem livremente. Personalidade, aparência, história, comportamento, universo, relacionamento, voz, tudo o que quiser. Este campo é a definição principal do personagem."></textarea>
+<div id="fullFields" class="hidden">
+<label>Aparência</label><textarea id="appearance" placeholder="Aparência física, cabelo, olhos, roupas, estilo..."></textarea>
+<label>História e contexto</label><textarea id="backstory" placeholder="Passado, mundo, profissão, contexto..."></textarea>
+<label>Instruções de comportamento</label><textarea id="instructions" placeholder="Como deve agir, falar, reagir, narrar..."></textarea>
+<label>Primeira mensagem / saudação</label><textarea id="greeting" placeholder="A primeira fala do personagem"></textarea>
+</div>
+<div class="form-buttons"><button type="button" class="outline small" onclick="closeCreator()">Cancelar</button><button class="primary" type="submit">Salvar personagem</button></div>
+</form>
+</div></div>
+
+<!-- Chat -->
+<div class="modal hidden" id="chatModal">
+<div class="modal-box">
+<div class="modal-top"><h2 id="chatTitle">Conversa</h2><button class="close" onclick="closeChat()">×</button></div>
+<div id="chatMessages" class="chat-box"></div>
+<div class="chat-input"><input id="chatInput" placeholder="Escreva uma mensagem..." onkeydown="if(event.key==='Enter')sendMessage()"><button class="primary" onclick="sendMessage()">Enviar</button></div>
+<p class="note" id="chatNote">O chat ainda não está conectado a um serviço de IA. As mensagens serão salvas localmente. A conexão real será configurada na próxima etapa.</p>
+</div></div>
+
+<script>
+const STORE='venus.ai.characters.v1', FAV='venus.ai.favorites.v1', CHATS='venus.ai.chats.v1';
+let characters=JSON.parse(localStorage.getItem(STORE)||'[]');
+let favorites=JSON.parse(localStorage.getItem(FAV)||'[]');
+let chats=JSON.parse(localStorage.getItem(CHATS)||'{}');
+let page='explore',filter='Todos',activeChat=null;
+
+function save(){localStorage.setItem(STORE,JSON.stringify(characters));localStorage.setItem(FAV,JSON.stringify(favorites));localStorage.setItem(CHATS,JSON.stringify(chats))}
+function esc(s=''){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function render(){
+ const query=document.getElementById('search').value.toLowerCase();
+ document.getElementById('sectionTitle').textContent=page==='mine'?'Meus personagens':page==='favorites'?'Favoritos':'Explore personagens';
+ let list=characters.filter(c=>(page==='mine'?c.owner==='user':page==='favorites'?favorites.includes(c.id):true)&&
+ (filter==='Todos'||c.category===filter)&&
+ (c.name+' '+c.prompt+' '+c.category).toLowerCase().includes(query));
+ document.getElementById('count').textContent=list.length+' personagem(ns)';
+ const cards=document.getElementById('cards');
+ if(!list.length){cards.innerHTML='<div class="empty" style="grid-column:1/-1">Nenhum personagem aqui ainda.<br><br>Crie seu primeiro personagem para começar.</div>';return}
+ cards.innerHTML=list.map(c=>`<article class="card"><div class="avatar"><span class="initial">${esc((c.name||'?').slice(0,1).toUpperCase())}</span></div><div class="card-body"><h3>${esc(c.name)}</h3><p>${esc(c.prompt)}</p><div class="tags"><span class="tag">${esc(c.category)}</span><span class="tag">${c.mode==='full'?'Completo':'Rápido'}</span></div><div class="card-actions"><button class="primary small" onclick="openChat('${c.id}')">Conversar</button><button class="heart" title="Favoritar" onclick="toggleFav('${c.id}')">${favorites.includes(c.id)?'♥':'♡'}</button></div>${c.owner==='user'?`<div class="card-actions"><button class="outline small" onclick="editCharacter('${c.id}')">Editar</button><button class="outline small" onclick="deleteCharacter('${c.id}')">Excluir</button></div>`:''}</div></article>`).join('');
+}
+function openCreator(c=null){
+ document.getElementById('creator').classList.remove('hidden');
+ document.getElementById('characterForm').reset();
+ document.getElementById('editId').value=c?.id||'';
+ document.getElementById('creatorTitle').textContent=c?'Editar personagem':'Criar personagem';
+ if(c){name.value=c.name||'';prompt.value=c.prompt||'';category.value=c.category||'Romance';mode.value=c.mode||'quick';appearance.value=c.appearance||'';backstory.value=c.backstory||'';instructions.value=c.instructions||'';greeting.value=c.greeting||''}
+ fullFields.classList.toggle('hidden',mode.value!=='full');
+}
+function closeCreator(){creator.classList.add('hidden')}
+function editCharacter(id){const c=characters.find(x=>x.id===id);if(c)openCreator(c)}
+function deleteCharacter(id){if(!confirm('Excluir este personagem?'))return;characters=characters.filter(c=>c.id!==id);favorites=favorites.filter(x=>x!==id);delete chats[id];save();render()}
+function toggleFav(id){favorites.includes(id)?favorites=favorites.filter(x=>x!==id):favorites.push(id);save();render()}
+mode.onchange=()=>fullFields.classList.toggle('hidden',mode.value!=='full');
+characterForm.onsubmit=e=>{
+ e.preventDefault();
+ const id=editId.value||crypto.randomUUID();
+ const old=characters.find(c=>c.id===id);
+ const c={id,name:name.value.trim(),category:category.value,mode:mode.value,prompt:prompt.value.trim(),appearance:appearance.value,backstory:backstory.value,instructions:instructions.value,greeting:greeting.value,owner:'user',created:old?.created||Date.now()};
+ old?characters=characters.map(x=>x.id===id?c:x):characters.unshift(c);
+ save();closeCreator();render();
+};
+function openChat(id){
+ activeChat=id;const c=characters.find(x=>x.id===id);if(!c)return;
+ chatTitle.textContent='Conversando com '+c.name;
+ if(!chats[id])chats[id]=[];
+ if(!chats[id].length&&c.greeting)chats[id].push({role:'bot',text:c.greeting});
+ renderChat();chatModal.classList.remove('hidden');
+}
+function renderChat(){chatMessages.innerHTML=(chats[activeChat]||[]).map(m=>`<div class="msg ${m.role==='user'?'user':'bot'}">${esc(m.text)}</div>`).join('');chatMessages.scrollTop=chatMessages.scrollHeight}
+function sendMessage(){
+ const input=chatInput;if(!input.value.trim()||!activeChat)return;
+ chats[activeChat]=chats[activeChat]||[];
+ chats[activeChat].push({role:'user',text:input.value.trim()});input.value='';
+ save();renderChat();
+}
+function closeChat(){chatModal.classList.add('hidden');activeChat=null}
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{
+ page=b.dataset.page;document.querySelectorAll('nav button').forEach(x=>x.classList.toggle('active',x===b));render();
+});
+document.querySelectorAll('#filters button').forEach(b=>b.onclick=()=>{
+ filter=b.dataset.filter;document.querySelectorAll('#filters button').forEach(x=>x.classList.toggle('active',x===b));render();
+});
+render();
+</script>
+</body>
+</html>
